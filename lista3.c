@@ -202,6 +202,27 @@ int main()
     return 0;
 }
 
+*Questão 10-*
+
+#include <stdio.h>
+int main()
+{
+	float dividendo, divisor, quociente=1, resto=0;
+	printf("Digite o dividendo: \n");
+	scanf("%f", &dividendo);
+	printf("Digite o divisor: \n");
+	scanf("%f", &divisor);
+	resto=dividendo-(quociente*divisor);
+	while(resto>=divisor)
+	{
+		quociente=quociente+1;
+		resto=dividendo-(quociente*divisor);
+		printf("%f\n", resto);
+	}
+	printf("Quociente: %.0f\n", quociente);
+	return 0;
+}
+
 *Questão 11.1-*
 
 #include <stdio.h>
