@@ -218,6 +218,32 @@ int main()
     return 0;
 }
 
+*Questão 11.2-*
+
+#include <stdio.h>
+
+int main()
+{
+	int base, expoente, i, resposta=1;
+	printf("Digite a base: \n");
+	scanf("%d", &base);
+	printf("Digite o expoente: \n");
+	scanf("%d", &expoente);
+	for (i=1; i<=expoente; i++)
+	{
+		if(expoente==1)
+		{
+			resposta=base;
+		}
+		else
+		{
+			resposta=resposta*base;
+		}
+	}
+	printf("Resposta: %d\n", resposta);
+	return 0;
+}
+
 *Questão 12-*
 
 #include <stdio.h>
